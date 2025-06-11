@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extension group="fabrik_list" method="upgrade" type="plugin" version="3">
+	<name>plg_fabrik_list_records_management</name>
+	<author>Jlowcode Organization</author>
+	<creationDate>June 2025</creationDate>
+	<copyright>Copyright (C) 2025 Jlowcode Org - All rights reserved.</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>contact@jlowcode.org</authorEmail>
+	<authorUrl>www.jlowcode.org</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_LIST_RECORD_MANAGEMENT_DESCRIPTION</description>
+	<files>
+		<filename plugin="record_management">record_management.php</filename>
+		<filename>index.html</filename>
+		<filename>record_management.js</filename>
+		<filename>record_management-min.js</filename>
+		<folder>forms</folder>
+		<folder>language</folder>
+	</files>
+</extension>
