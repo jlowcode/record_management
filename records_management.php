@@ -173,7 +173,7 @@ class PlgFabrik_ListRecords_management extends plgFabrik_List
 		$db = Factory::getContainer()->get('DatabaseDriver');
 
 		$timeZone = new \DateTimeZone($this->config->get('offset'));
-		$dataEventMiddle = $row['evento_fase_corrente_raw'] ?? '';
+		$dataEventMiddle = $row['evento_fase_intermediaria_raw'] ?? '';
 		$yearToCheck = $dataDocumentCategory['fase_intermediaria_raw'] ?? '';
 		$tableName = $listModel->getFormModel()->getTableName();
 
