@@ -8,12 +8,12 @@
 	<authorEmail>contact@jlowcode.org</authorEmail>
 	<authorUrl>www.jlowcode.org</authorUrl>
 	<version>1.0.0</version>
-	<description>PLG_LIST_RECORD_MANAGEMENT_DESCRIPTION</description>
+	<description>PLG_LIST_RECORDS_MANAGEMENT_DESCRIPTION</description>
 	<files>
-		<filename plugin="record_management">record_management.php</filename>
+		<filename plugin="records_management">records_management.php</filename>
 		<filename>index.html</filename>
-		<filename>record_management.js</filename>
-		<filename>record_management-min.js</filename>
+		<filename>records_management.js</filename>
+		<filename>records_management-min.js</filename>
 		<folder>forms</folder>
 		<folder>language</folder>
 	</files>

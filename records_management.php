@@ -1,6 +1,6 @@
 <?php
 /**
- * Add an record_management button to run PHP or get a result from a function
+ * Add an records_management button to run PHP or get a result from a function
  * 
  * @package     Joomla.Plugin
  * @subpackage  Fabrik.list.php
@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted access');
 require_once COM_FABRIK_FRONTEND . '/models/plugin-list.php';
 
 /**
- *  Add an record_management button to run PHP
+ *  Add an records_management button to run PHP
  *
  * @package     Joomla.Plugin
  * @subpackage  Fabrik.list.php
