@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <form>
 	<fields addfieldpath="/administrator/components/com_fabrik/models/fields" name="params">
-		<fieldset name="plg-list-php">
-			
+		<fieldset label="PLG_FABRIK_LIST_RECORDS_MANAGEMENT_OPTIONS"  name="plg-list-records-management">
+			<field type="helplink"
+				url="PLG_FABRIK_LIST_RECORDS_MANAGEMENT_HELP_SERVER" />
 		</fieldset>
 	</fields>
 </form>

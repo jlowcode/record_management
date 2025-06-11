@@ -21,7 +21,7 @@ require_once COM_FABRIK_FRONTEND . '/models/plugin-list.php';
  * @subpackage  Fabrik.list.php
  */
 
-class PlgFabrik_ListAction extends plgFabrik_List
+class PlgFabrik_ListRecords_management extends plgFabrik_List
 {
 
 	/*
