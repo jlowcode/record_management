@@ -51,7 +51,9 @@ class PlgFabrik_ListRecords_management extends plgFabrik_List
 	 */
 	public function onCheckDeadlines()
 	{
+		$app = Factory::getApplication();
 		$filter = JFilterInput::getInstance();
+
 		$request = $filter->clean($_REQUEST, 'array');
 		$listId = $request['listid'];
 		$response = new StdClass;
@@ -132,7 +134,7 @@ class PlgFabrik_ListRecords_management extends plgFabrik_List
 		$yearToCheck = $dataDocumentCategory['fase_corrente_raw'];
 		$tableName = $listModel->getFormModel()->getTableName();
 
-		if(empty($dataEventCurrent) || empty($yearToCheck)) {
+		if(empty($dataEventCurrent) || (empty($yearToCheck) && $yearToCheck !== '0')) {
 			return;
 		}
 
@@ -150,7 +152,7 @@ class PlgFabrik_ListRecords_management extends plgFabrik_List
 		$date = $date->add($intervalToCheck);
 
 		// Update the status if the date is greater than now or if the year to check is 0 and the year is different from the current year
-		if($now > $date || ($yearToCheck == 0 && (int) $date->format('Y') != (int) $now->format('Y'))) {
+		if($now > $date) {
 			$update = new stdClass();
 			$update->id = $row['id_raw'];
 			$update->status = 3;
@@ -177,7 +179,7 @@ class PlgFabrik_ListRecords_management extends plgFabrik_List
 		$yearToCheck = $dataDocumentCategory['fase_intermediaria_raw'] ?? '';
 		$tableName = $listModel->getFormModel()->getTableName();
 
-		if(empty($dataEventMiddle) || empty($yearToCheck)) {
+		if(empty($dataEventMiddle) || (empty($yearToCheck) && $yearToCheck !== '0')) {
 			return;
 		}
 

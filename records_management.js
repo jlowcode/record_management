@@ -76,6 +76,7 @@ define(['jquery', 'fab/fabrik', 'fab/list-plugin'], function (jQuery, Fabrik, Fb
 
                 alert(Joomla.JText._("PLG_FABRIK_LIST_RECORDS_MANAGEMENT_DEADLINES_CHECKED"));
                 Fabrik.loader.stop(jQuery('.listContent'));
+				location.reload();
             }).fail(function (jq, status, error) {
 				var message = {
 					url: '',
